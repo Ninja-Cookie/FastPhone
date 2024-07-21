@@ -8,12 +8,12 @@ namespace FastPhone
     {
         public const string pluginGuid      = "ninjacookie.brc.fastphone";
         public const string pluginName      = "Fast Phone";
-        public const string pluginVersion   = "1.0.0";
+        public const string pluginVersion   = "1.0.1";
 
         private void Awake()
         {
             var harmony = new Harmony(pluginGuid);
-            harmony.PatchAll(typeof(PhonePatches));
+            harmony.PatchAll();
         }
     }
 }

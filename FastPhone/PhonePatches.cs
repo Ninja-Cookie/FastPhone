@@ -9,7 +9,7 @@ using static FastPhone.ReflectionCalls;
 
 namespace FastPhone
 {
-    internal class PhonePatches
+    internal class PhonePatches : HarmonyPatch
     {
         private static bool waitForRelease = false;
 
